@@ -12,7 +12,7 @@ db = MongoEngine(app)
 def register_blueprints(app):
     # prevents circular imports
     from tumblelog.views import posts
-    app.register_bluprint(post)
+    app.register_blueprint(posts)
 
 register_blueprints(app)
 
